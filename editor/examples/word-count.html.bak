@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Word Count Examples</title>
+		<style>
+			form {
+				margin: 0;
+			}
+			textarea {
+				display: block;
+			}
+		</style>
+		<script charset="utf-8" src="../kindeditor-min.js"></script>
+		<script charset="utf-8" src="../lang/zh_CN.js"></script>
+		<script>
+			KindEditor.ready(function(K) {
+				K.create('textarea[name="content"]', {
+					afterChange : function() {
+						K('.word_count1').html(this.count());
+						K('.word_count2').html(this.count('text'));
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h3>缁熻瀛楁暟</h3>
+		<form>
+			<textarea name="content" style="width:800px;height:200px;"></textarea>
+			<p>
+				镇ㄥ綋鍓嶈緭鍏ヤ简 <span class="word_count1">0</span> 涓枃瀛椼€傦纸瀛楁暟缁熻鍖呭惈HTML浠ｇ爜銆傦级<br />
+				镇ㄥ綋鍓嶈緭鍏ヤ简 <span class="word_count2">0</span> 涓枃瀛椼€傦纸瀛楁暟缁熻鍖呭惈绾枃链€両MG銆丒MBED锛屼笉鍖呭惈鎹㈣绗︼紝IMG鍜孍MBED绠椾竴涓枃瀛椼€傦级
+			</p>
+		</form>
+	</body>
+</html>

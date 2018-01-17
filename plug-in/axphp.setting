@@ -1,0 +1,14 @@
+<?php
+$axphp=array(
+"title" => '@title@',
+"description" => '@description@',
+"keywords" => '@keywords@',
+"domain" => '@domain@',
+"ticheng" => '@ticheng@',
+"moneyname" => '@moneyname@',
+"paynum" => '@paynum@',
+"xxopen" => '@xxopen@',
+"alert" => '@alert@',
+"bottom" => '@bottom@'
+);
+?>

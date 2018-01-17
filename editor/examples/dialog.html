@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Dialog Examples</title>
+		<link rel="stylesheet" href="../themes/default/default.css" />
+		<script src="../kindeditor.js"></script>
+		<script>
+			KindEditor.ready(function(K) {
+				K('#create1').click(function() {
+					var dialog = K.dialog({
+						width : 500,
+						title : '娴嬭瘯绐楀彛',
+						body : '<div style="margin:10px;"><strong>鍐呭</strong></div>',
+						closeBtn : {
+							name : '鍏抽棴',
+							click : function(e) {
+								dialog.remove();
+							}
+						},
+						yesBtn : {
+							name : '纭畾',
+							click : function(e) {
+								alert(this.value);
+							}
+						},
+						noBtn : {
+							name : '鍙栨秷',
+							click : function(e) {
+								dialog.remove();
+							}
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" id="create1" value="镓揿紑寮瑰嚭妗? />
+	</body>
+</html>

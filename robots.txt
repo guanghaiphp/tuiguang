@@ -1,0 +1,10 @@
+﻿User-agent: *
+Disallow: /ax/
+Disallow: /admin/
+Disallow: /manage/
+Disallow: /install/
+Disallow: /plug-in/
+Disallow: /template/
+Disallow: /lhgdialog/
+Disallow: /editor/
+Disallow: /js/

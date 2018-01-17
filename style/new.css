@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color:#F8F8F8;
+}
+#top{
+    height:35px;
+    background-color: #2C2C2C;
+    font-size:12px;
+    color:#FFFFFF;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+#topa{
+    width:1000px;
+    height:35px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+#topa .left{
+    line-height: 35px;
+    height:35px;
+    float:left;
+}
+#topa .right{
+    line-height: 35px;
+    height:35px;
+    float:right;
+}
+#topa a{
+    text-decoration: none;
+    color: #EFEFEF;
+    font-size:12px;
+    padding-left:15px;
+    padding-right:15px;
+}
+#menu{
+    height:65px;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#FFFFFF;
+
+}
+
+#menu .left{
+    float:left;
+    width:350px;
+    height:65px;
+}
+
+#menu .right{
+    float:right;
+    width:500px;
+    height:65px;
+    line-height: 100px;
+
+}
+
+#menu .right a{
+    font-weight:bold;
+    font-size:16px;
+    padding-right:50px;
+    color: #707070;
+    text-decoration:none;
+}
+#menu .right a:hover{
+    color: red;
+}
+
+#main{
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color: #77A7E5;
+    background-image:url("../images/by.jpg");
+}
+#maina{
+    width:1000px;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+#maina .left{
+    height:400px;
+    width:550px;
+    float:left;
+}
+#maina .right{
+    margin-top:30px;
+    height:330px;
+    width:300px;
+    float:right;
+    background-color:#E9EEF8;
+}
+#maina .right_a{
+    font-weight:bold;
+    text-align:left;
+    line-height: 80px;
+    color:#484848;
+    padding-left:25px;
+    width:300px;
+    height:80px;
+}
+#maina .login{
+    padding-left:25px;
+    text-align:left;
+
+}
+#maina .login a{
+    font-size:12px;
+    color:#0078B6;
+    text-decoration: none;
+}
+
+#js{
+    margin-top:50px;
+    width:1000px;
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+#js .left{
+    line-height: 27px;
+    font-size:14px;
+    width:332px;
+    float:left;
+    height:100px;
+    text-align:left;
+    color: #4C4C4C;
+}
+
+#bottom{
+    margin-top:50px;
+    width:1000px;
+    height:120px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+#bottom a{
+    text-decoration:none;
+    color: #4C4C4C;
+    font-size:14px;
+}

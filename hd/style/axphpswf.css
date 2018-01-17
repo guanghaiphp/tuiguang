@@ -1,0 +1,40 @@
+﻿* {
+	padding-bottom: 0px; list-style-type: none; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px
+}
+img {
+	border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px
+}
+a {
+	color: #474747; text-decoration: none
+}
+a:hover {
+	text-decoration: underline
+}
+body {
+	font-family: "宋体", arial, sans-serif; background: #fff; color: #474747; font-size: 14px;text-align:center;
+}
+.hidden {
+	display: none
+}
+.focus {
+	width: 700px; float: left;text-align:center;
+}
+.focus .cont img {
+	width: 700px; display: block; height: 210px;
+}
+.focus .cont .hidden {
+	display: none
+}
+.focus .cont strong {
+	position: absolute;color: #003046; padding-bottom: 0px; padding-left: 8px; padding-right: 0px; display: block; font-size: 18px; padding-top: 14px;
+}
+
+.change {
+	width: 700px; background: url(../images/change.jpg) repeat-x; float: right; height: 35px; padding-top: 15px
+}
+.change li {
+	text-align: center; padding-bottom: 0px; line-height: 17px; padding-left: 0px; width: 25px; padding-right: 0px; display: inline; background: url(../images/chblack.jpg) no-repeat; float: right; color: #fff; cursor: pointer; font-weight: bold; margin-right: 5px; padding-top: 0px
+}
+.change li.current {
+	background: url(../images/chblue.jpg) no-repeat; color: #fff
+}

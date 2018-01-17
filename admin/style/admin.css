@@ -1,0 +1,57 @@
+body{
+    padding:0;
+    margin:0;
+    text-align:center;
+    background-color: #EBEBEB;
+}
+form{
+    margin:0;
+    border:0;
+    padding:0;
+}
+#windows
+{
+    width:639px;
+    height:376px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:60px;
+    background-image: url("../images/admin_bg.gif");
+    background-repeat:no-repeat;
+    font-size:20px;
+    color:#FFFFFF;
+
+}
+#windows table tr td input.texta
+{
+    width:180px;
+    height:25px;
+    line-height: 25px;
+    font-size:16px;
+    color: #00A629;
+    background-color: #EEF7FF;
+    padding-left:25px;
+    background-image:url("../images/user.gif");
+    background-repeat:no-repeat;
+}
+
+#windows table tr td input.textb
+{
+    width:180px;
+    height:25px;
+    line-height: 25px;
+    font-size:16px;
+    color: #00A629;
+    background-color: #EEF7FF;
+    padding-left:25px;
+    background-image:url("../images/pass.gif");
+    background-repeat:no-repeat;
+}
+
+#windows table tr td input.submit
+{
+    width:100px;
+    height:75px;
+    font-size:16px;
+    color: #00A629;
+}

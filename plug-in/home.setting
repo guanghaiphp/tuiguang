@@ -1,0 +1,8 @@
+<?php
+$home_setting=array(
+"atitle" => '@atitle@',
+"atext" => '@atext@',
+"btitle" => '@btitle@',
+"btext" => '@btext@'
+);
+?>

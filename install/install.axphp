@@ -1,0 +1,120 @@
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE IF EXISTS `axphp_ad`;
+CREATE TABLE `axphp_ad` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `prices` double DEFAULT '0',
+  `zonge` double DEFAULT '0',
+  `ipnumber` int(11) DEFAULT '0',
+  `consumption` double DEFAULT '0',
+  `open` int(11) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_admin`;
+CREATE TABLE `axphp_admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `adminname` varchar(255) DEFAULT NULL,
+  `adminpass` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_gonggao`;
+CREATE TABLE `axphp_gonggao` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `content` text,
+  `datetime` datetime DEFAULT NULL,
+  `pv` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_ip_log`;
+CREATE TABLE `axphp_ip_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ip` varchar(50) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `datetime` datetime DEFAULT NULL,
+  `source` varchar(999) DEFAULT NULL,
+  `adid` int(11) DEFAULT NULL,
+  `income` double DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_key`;
+CREATE TABLE `axphp_key` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `keya` varchar(255) DEFAULT NULL,
+  `keyb` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_liuyan`;
+CREATE TABLE `axphp_liuyan` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `content` text,
+  `datetime` datetime DEFAULT NULL,
+  `leixing` varchar(255) DEFAULT NULL,
+  `jinji` varchar(255) DEFAULT NULL,
+  `huifu` varchar(255) DEFAULT '等待回复',
+  `hfcontent` text,
+  `hfdatetime` datetime DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_lunbo`;
+CREATE TABLE `axphp_lunbo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `prices` double DEFAULT '0',
+  `zonge` double DEFAULT '0',
+  `ipnumber` int(11) DEFAULT '0',
+  `consumption` double DEFAULT '0',
+  `open` int(11) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_pay`;
+CREATE TABLE `axphp_pay` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `money` double DEFAULT '0',
+  `datetime` datetime DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `are` int(11) DEFAULT '0',
+  `number` varchar(255) DEFAULT NULL,
+  `beizhu` varchar(999) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+DROP TABLE IF EXISTS `axphp_paynames`;
+CREATE TABLE `axphp_paynames` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pay` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=gbk;
+INSERT INTO `axphp_paynames` VALUES ('1', '支付宝');
+INSERT INTO `axphp_paynames` VALUES ('2', '财付通');
+INSERT INTO `axphp_paynames` VALUES ('3', '中国工商银行');
+INSERT INTO `axphp_paynames` VALUES ('4', '中国建设银行');
+INSERT INTO `axphp_paynames` VALUES ('5', '中国农业银行');
+DROP TABLE IF EXISTS `axphp_user`;
+CREATE TABLE `axphp_user` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `userpass` varchar(255) DEFAULT NULL,
+  `qq` int(11) DEFAULT NULL,
+  `userlock` int(11) DEFAULT '1',
+  `money` double DEFAULT '0',
+  `ticheng` double DEFAULT '0',
+  `payy` double DEFAULT '0',
+  `payn` double DEFAULT '0',
+  `payj` double DEFAULT '0',
+  `regtime` datetime DEFAULT NULL,
+  `unions` varchar(255) DEFAULT '0',
+  `dizhi` varchar(255) DEFAULT NULL,
+  `dianhua` varchar(255) DEFAULT NULL,
+  `youbian` varchar(255) DEFAULT NULL,
+  `shenfenzheng` varchar(255) DEFAULT NULL,
+  `mb` varchar(255) DEFAULT NULL,
+  `pay_name` varchar(255) DEFAULT NULL,
+  `pay_id` varchar(255) DEFAULT NULL,
+  `pay_username` varchar(255) DEFAULT NULL,
+  `jifen` int(11) DEFAULT '0',
+  PRIMARY KEY (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk
